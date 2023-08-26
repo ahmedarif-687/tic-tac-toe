@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(151, 70, 163);
+    color: white;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    font-size: 28px;
+    padding: 0px 12px;
+    font-family: 'roboto', sans-serif;
+}
+
+nav ul {
+
+    list-style-type: none;
+
+}
+
+.gamecontainer {
+
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+
+}
+
+.container {
+
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'roboto', sans-serif;
+    position: relative;
+
+}
+
+.box {
+
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gameinfo {
+    padding: 0 12px;
+
+}
+
+.gameinfo h1 {
+    font-size: 2.5rem;
+}
+
+.box:hover {
+    background-color: aqua;
+    font-family: 'roboto', sans-serif;
+}
+
+.info {
+
+    font-size: 25px;
+}
+
+.imgbox img {
+
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0 {
+    border-right: 0px;
+}
+
+.bl-0 {
+    border-left: 0px;
+}
+
+.bt-0 {
+    border-top: 0px;
+}
+
+.bb-0 {
+    border-bottom: 0px;
+}
+
+#reset {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: rgb(239, 183, 183);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+@media screen and(max-width: 800px) {
+
+    .gamecontainer {
+        flex-wrap: wrap;
+
+    }
+
+    .gameinfo {
+        margin-top: 34px;
+    }
+
+    .gameinfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+
+        display: grid;
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+
+
+}
+
+.line{
+
+    background-color: black;
+    height: 3px;
+    width: 30vw;
+    position: absolute;
+}
